@@ -8,4 +8,4 @@ http://blog.csdn.net/jinnchang
 推荐使用最新版本的 Xcode 进行编译运行.
 
 # Contact
-如果有问题可以给我博客留言.
+如果有问题可以给我该篇博客留言.
