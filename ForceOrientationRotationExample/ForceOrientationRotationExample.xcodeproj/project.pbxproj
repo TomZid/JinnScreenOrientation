@@ -1,0 +1,384 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BFADF554F246DAAAE879AE4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CF60C465789AEB00D03A63 /* libPods.a */; };
+		FA21B3021D3F208C00B92819 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA21B3011D3F208C00B92819 /* main.m */; };
+		FA21B3051D3F208C00B92819 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA21B3041D3F208C00B92819 /* AppDelegate.m */; };
+		FA21B3081D3F208C00B92819 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA21B3071D3F208C00B92819 /* ViewController.m */; };
+		FA21B30D1D3F208C00B92819 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA21B30C1D3F208C00B92819 /* Assets.xcassets */; };
+		FA21B3881D3F4F5F00B92819 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FA21B3811D3F4F5F00B92819 /* icon.png */; };
+		FA21B3891D3F4F5F00B92819 /* JinnNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA21B3831D3F4F5F00B92819 /* JinnNavigationController.m */; };
+		FA21B38A1D3F4F5F00B92819 /* PresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA21B3851D3F4F5F00B92819 /* PresentViewController.m */; };
+		FA21B38B1D3F4F5F00B92819 /* PushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA21B3871D3F4F5F00B92819 /* PushViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4ECD512E117FA143EAA16B0E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		5F41905F1AA61AE2F7B9EAB0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D7CF60C465789AEB00D03A63 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA21B2FD1D3F208C00B92819 /* ForceOrientationRotationExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForceOrientationRotationExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA21B3011D3F208C00B92819 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA21B3031D3F208C00B92819 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FA21B3041D3F208C00B92819 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FA21B3061D3F208C00B92819 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FA21B3071D3F208C00B92819 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FA21B30C1D3F208C00B92819 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA21B3111D3F208C00B92819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA21B3811D3F4F5F00B92819 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		FA21B3821D3F4F5F00B92819 /* JinnNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JinnNavigationController.h; sourceTree = "<group>"; };
+		FA21B3831D3F4F5F00B92819 /* JinnNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JinnNavigationController.m; sourceTree = "<group>"; };
+		FA21B3841D3F4F5F00B92819 /* PresentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentViewController.h; sourceTree = "<group>"; };
+		FA21B3851D3F4F5F00B92819 /* PresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentViewController.m; sourceTree = "<group>"; };
+		FA21B3861D3F4F5F00B92819 /* PushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushViewController.h; sourceTree = "<group>"; };
+		FA21B3871D3F4F5F00B92819 /* PushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA21B2FA1D3F208C00B92819 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BFADF554F246DAAAE879AE4 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C27091E4E4AB712493FF008 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F41905F1AA61AE2F7B9EAB0 /* Pods.debug.xcconfig */,
+				4ECD512E117FA143EAA16B0E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		811A3709D137581F0324020B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7CF60C465789AEB00D03A63 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA21B2F41D3F208C00B92819 = {
+			isa = PBXGroup;
+			children = (
+				FA21B2FF1D3F208C00B92819 /* ForceOrientationRotationExample */,
+				FA21B2FE1D3F208C00B92819 /* Products */,
+				0C27091E4E4AB712493FF008 /* Pods */,
+				811A3709D137581F0324020B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA21B2FE1D3F208C00B92819 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA21B2FD1D3F208C00B92819 /* ForceOrientationRotationExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA21B2FF1D3F208C00B92819 /* ForceOrientationRotationExample */ = {
+			isa = PBXGroup;
+			children = (
+				FA21B3031D3F208C00B92819 /* AppDelegate.h */,
+				FA21B3041D3F208C00B92819 /* AppDelegate.m */,
+				FA21B3061D3F208C00B92819 /* ViewController.h */,
+				FA21B3071D3F208C00B92819 /* ViewController.m */,
+				FA21B3821D3F4F5F00B92819 /* JinnNavigationController.h */,
+				FA21B3831D3F4F5F00B92819 /* JinnNavigationController.m */,
+				FA21B3841D3F4F5F00B92819 /* PresentViewController.h */,
+				FA21B3851D3F4F5F00B92819 /* PresentViewController.m */,
+				FA21B3861D3F4F5F00B92819 /* PushViewController.h */,
+				FA21B3871D3F4F5F00B92819 /* PushViewController.m */,
+				FA21B3001D3F208C00B92819 /* Supporting Files */,
+			);
+			path = ForceOrientationRotationExample;
+			sourceTree = "<group>";
+		};
+		FA21B3001D3F208C00B92819 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA21B3811D3F4F5F00B92819 /* icon.png */,
+				FA21B30C1D3F208C00B92819 /* Assets.xcassets */,
+				FA21B3111D3F208C00B92819 /* Info.plist */,
+				FA21B3011D3F208C00B92819 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA21B2FC1D3F208C00B92819 /* ForceOrientationRotationExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA21B3141D3F208C00B92819 /* Build configuration list for PBXNativeTarget "ForceOrientationRotationExample" */;
+			buildPhases = (
+				97283473CC3E071DB16FAA4A /* Check Pods Manifest.lock */,
+				FA21B2F91D3F208C00B92819 /* Sources */,
+				FA21B2FA1D3F208C00B92819 /* Frameworks */,
+				FA21B2FB1D3F208C00B92819 /* Resources */,
+				A120A5B4947ECB7B353A3C37 /* Embed Pods Frameworks */,
+				C980123C78CDB4999FD4FD2C /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ForceOrientationRotationExample;
+			productName = ForceOrientationRotationExample;
+			productReference = FA21B2FD1D3F208C00B92819 /* ForceOrientationRotationExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA21B2F51D3F208C00B92819 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Jinn Chang";
+				TargetAttributes = {
+					FA21B2FC1D3F208C00B92819 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = FA21B2F81D3F208C00B92819 /* Build configuration list for PBXProject "ForceOrientationRotationExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA21B2F41D3F208C00B92819;
+			productRefGroup = FA21B2FE1D3F208C00B92819 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA21B2FC1D3F208C00B92819 /* ForceOrientationRotationExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA21B2FB1D3F208C00B92819 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA21B3881D3F4F5F00B92819 /* icon.png in Resources */,
+				FA21B30D1D3F208C00B92819 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		97283473CC3E071DB16FAA4A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A120A5B4947ECB7B353A3C37 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C980123C78CDB4999FD4FD2C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA21B2F91D3F208C00B92819 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA21B38A1D3F4F5F00B92819 /* PresentViewController.m in Sources */,
+				FA21B3891D3F4F5F00B92819 /* JinnNavigationController.m in Sources */,
+				FA21B38B1D3F4F5F00B92819 /* PushViewController.m in Sources */,
+				FA21B3081D3F208C00B92819 /* ViewController.m in Sources */,
+				FA21B3051D3F208C00B92819 /* AppDelegate.m in Sources */,
+				FA21B3021D3F208C00B92819 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FA21B3121D3F208C00B92819 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA21B3131D3F208C00B92819 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA21B3151D3F208C00B92819 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F41905F1AA61AE2F7B9EAB0 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ForceOrientationRotationExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jinnchang.ios-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FA21B3161D3F208C00B92819 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ECD512E117FA143EAA16B0E /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ForceOrientationRotationExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jinnchang.ios-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA21B2F81D3F208C00B92819 /* Build configuration list for PBXProject "ForceOrientationRotationExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA21B3121D3F208C00B92819 /* Debug */,
+				FA21B3131D3F208C00B92819 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA21B3141D3F208C00B92819 /* Build configuration list for PBXNativeTarget "ForceOrientationRotationExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA21B3151D3F208C00B92819 /* Debug */,
+				FA21B3161D3F208C00B92819 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA21B2F51D3F208C00B92819 /* Project object */;
+}
