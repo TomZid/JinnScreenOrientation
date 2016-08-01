@@ -7,11 +7,11 @@ iOS6 及其以上版本自动旋转、手动强制旋转各种场景方案。
 # Examples
 #####AnyOrientationRotationExample
 
-- 整体应用任意旋转场景（一般 iPad 应用都是这种方式）
+- 整体应用任意旋转（一般 iPad 应用都是这种方式）
 
 #####ForceOrientationRotationExample
 
-- 整体应用限制旋转，个别页面支持手动强制旋转（如部分本地视频播放器）
+- 整体应用限制旋转，个别页面支持手动强制旋转（如：部分本地视频播放器）
 
 #####IndividualRotationExample 
 
