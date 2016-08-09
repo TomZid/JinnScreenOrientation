@@ -31,7 +31,7 @@
                                                                               target:self
                                                                               action:@selector(present)]];
     
-    self.title = @"页面强制旋转";
+    self.title = @"局部强制旋转";
     self.view.backgroundColor = [UIColor whiteColor];
 }
 

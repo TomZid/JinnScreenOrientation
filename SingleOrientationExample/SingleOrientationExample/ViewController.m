@@ -36,7 +36,7 @@
                                                                                target:self
                                                                                action:@selector(push)]];
     
-    self.title = @"限制为横屏或者竖屏，不能旋转";
+    self.title = @"限制为单个方向，不能旋转";
     self.view.backgroundColor = [UIColor whiteColor];
 }
 

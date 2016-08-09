@@ -15,7 +15,6 @@
 
 #import "ViewController.h"
 #import "PresentViewController.h"
-#import "PushViewController.h"
 
 @interface ViewController ()
 
@@ -31,23 +30,14 @@
                                                                                style:UIBarButtonItemStylePlain
                                                                               target:self
                                                                               action:@selector(present)]];
-    [self.navigationItem setRightBarButtonItem:[[UIBarButtonItem alloc] initWithTitle:@"Push"
-                                                                                style:UIBarButtonItemStylePlain
-                                                                               target:self
-                                                                               action:@selector(push)]];
     
-    self.title = @"整体不能旋转，个别页面可以旋转";
+    self.title = @"整体不能旋转，个别页面任意旋转";
     self.view.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)present
 {
     [self presentViewController:[[PresentViewController alloc] init] animated:YES completion:nil];
-}
-
-- (void)push
-{
-    [self.navigationController pushViewController:[[PushViewController alloc] init] animated:YES];
 }
 
 @end

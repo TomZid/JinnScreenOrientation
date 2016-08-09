@@ -1,5 +1,5 @@
 # JinnScreenOrientationExample
-iOS6 及其以上版本自动旋转、手动强制旋转各种场景方案。
+iOS6 及其以上版本自动旋转、手动强制旋转各种场景方案示例。
 
 相关的具体介绍的文章是：http://blog.csdn.net/jinnchang/article/details/46974255
 # Notice
@@ -23,7 +23,7 @@ iOS6 及其以上版本自动旋转、手动强制旋转各种场景方案。
 
 #####SingleOrientationExample 
 
-- 整体应用限制单个方向（一般 iPhone 应用都是这种方式）
+- 整体应用限制单个方向，不能旋转（一般 iPhone 应用都是这种方式）
 
 # Github
 https://github.com/jinnchang

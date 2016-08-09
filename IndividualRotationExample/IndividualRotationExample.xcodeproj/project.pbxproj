@@ -15,7 +15,6 @@
 		FA21B37D1D3F4CCD00B92819 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FA21B3761D3F4CCC00B92819 /* icon.png */; };
 		FA21B37E1D3F4CCD00B92819 /* JinnNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA21B3781D3F4CCD00B92819 /* JinnNavigationController.m */; };
 		FA21B37F1D3F4CCD00B92819 /* PresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA21B37A1D3F4CCD00B92819 /* PresentViewController.m */; };
-		FA21B3801D3F4CCD00B92819 /* PushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA21B37C1D3F4CCD00B92819 /* PushViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +34,6 @@
 		FA21B3781D3F4CCD00B92819 /* JinnNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JinnNavigationController.m; sourceTree = "<group>"; };
 		FA21B3791D3F4CCD00B92819 /* PresentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentViewController.h; sourceTree = "<group>"; };
 		FA21B37A1D3F4CCD00B92819 /* PresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentViewController.m; sourceTree = "<group>"; };
-		FA21B37B1D3F4CCD00B92819 /* PushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushViewController.h; sourceTree = "<group>"; };
-		FA21B37C1D3F4CCD00B92819 /* PushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +94,6 @@
 				FA21B3781D3F4CCD00B92819 /* JinnNavigationController.m */,
 				FA21B3791D3F4CCD00B92819 /* PresentViewController.h */,
 				FA21B37A1D3F4CCD00B92819 /* PresentViewController.m */,
-				FA21B37B1D3F4CCD00B92819 /* PushViewController.h */,
-				FA21B37C1D3F4CCD00B92819 /* PushViewController.m */,
 				FA21B3231D3F217900B92819 /* Supporting Files */,
 			);
 			path = IndividualRotationExample;
@@ -237,7 +232,6 @@
 			files = (
 				FA21B37F1D3F4CCD00B92819 /* PresentViewController.m in Sources */,
 				FA21B37E1D3F4CCD00B92819 /* JinnNavigationController.m in Sources */,
-				FA21B3801D3F4CCD00B92819 /* PushViewController.m in Sources */,
 				FA21B32B1D3F217900B92819 /* ViewController.m in Sources */,
 				FA21B3281D3F217900B92819 /* AppDelegate.m in Sources */,
 				FA21B3251D3F217900B92819 /* main.m in Sources */,
