@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bZk-gW-QmC">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--强制旋转方案-->
+        <scene sceneID="niZ-fu-mcr">
+            <objects>
+                <viewController id="uhR-kA-xRY" customClass="RootViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d8G-6E-exr"/>
+                        <viewControllerLayoutGuide type="bottom" id="dhI-12-uwM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eMs-2p-gkj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="jpu-En-Nic">
+                                <rect key="frame" x="220" y="220" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="TAB-80-FOg"/>
+                                    <constraint firstAttribute="height" constant="160" id="oxi-1A-jZn"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="该页面不能旋转" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzw-kV-Znv">
+                                <rect key="frame" x="251" y="563" width="98" height="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jpu-En-Nic" firstAttribute="centerX" secondItem="eMs-2p-gkj" secondAttribute="centerX" id="WET-01-Zbx"/>
+                            <constraint firstItem="gzw-kV-Znv" firstAttribute="centerX" secondItem="jpu-En-Nic" secondAttribute="centerX" id="XQz-ci-Qpo"/>
+                            <constraint firstAttribute="bottom" secondItem="gzw-kV-Znv" secondAttribute="bottom" constant="20" symbolic="YES" id="dtF-M3-Dgu"/>
+                            <constraint firstItem="jpu-En-Nic" firstAttribute="centerY" secondItem="eMs-2p-gkj" secondAttribute="centerY" id="nSV-yt-JyC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="强制旋转方案" id="XXM-vQ-fir">
+                        <barButtonItem key="leftBarButtonItem" title="Present" id="Duz-XK-JjS">
+                            <connections>
+                                <segue destination="kmb-8v-zDx" kind="presentation" id="eTa-wo-5Rk"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Push" id="UrK-2P-fsB">
+                            <connections>
+                                <segue destination="g8H-oj-XTx" kind="show" id="0XS-B9-qoD">
+                                    <nil key="action"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ksq-mw-eyP" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1723" y="951"/>
+        </scene>
+        <!--Push 页面-->
+        <scene sceneID="wd6-6T-zXp">
+            <objects>
+                <viewController id="g8H-oj-XTx" customClass="PushViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yZR-s9-8f4"/>
+                        <viewControllerLayoutGuide type="bottom" id="JNf-xZ-62Q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qEb-nQ-u15">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bud-8v-61X">
+                                <rect key="frame" x="276" y="276" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Hs2-0D-kVK"/>
+                                    <constraint firstAttribute="width" constant="48" id="tZi-2n-w8P"/>
+                                </constraints>
+                                <state key="normal" image="orientation"/>
+                                <connections>
+                                    <action selector="forceRotation:" destination="g8H-oj-XTx" eventType="touchUpInside" id="bS7-17-GTU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="该页面可强制旋转" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvf-p2-fjb">
+                                <rect key="frame" x="244" y="563" width="112" height="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dvf-p2-fjb" firstAttribute="centerX" secondItem="bud-8v-61X" secondAttribute="centerX" id="RqZ-zB-dpv"/>
+                            <constraint firstAttribute="bottom" secondItem="dvf-p2-fjb" secondAttribute="bottom" constant="20" symbolic="YES" id="dwc-ZZ-YvA"/>
+                            <constraint firstItem="bud-8v-61X" firstAttribute="centerY" secondItem="qEb-nQ-u15" secondAttribute="centerY" id="uwd-D1-KRg"/>
+                            <constraint firstItem="bud-8v-61X" firstAttribute="centerX" secondItem="qEb-nQ-u15" secondAttribute="centerX" id="zq4-6N-8Vh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Push 页面" id="Rcm-B5-HZf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TXP-tS-4oZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2442" y="553"/>
+        </scene>
+        <!--Present View Controller-->
+        <scene sceneID="D62-4r-JeT">
+            <objects>
+                <viewController id="kmb-8v-zDx" customClass="PresentViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NH1-kP-AYA"/>
+                        <viewControllerLayoutGuide type="bottom" id="cxN-s5-JoO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IX6-Mz-QhR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3GP-vC-5dp">
+                                <rect key="frame" x="276" y="276" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="fFQ-eV-TVw"/>
+                                    <constraint firstAttribute="width" constant="48" id="h4I-0U-dui"/>
+                                </constraints>
+                                <state key="normal" image="orientation"/>
+                                <connections>
+                                    <action selector="forceRotation:" destination="kmb-8v-zDx" eventType="touchUpInside" id="0t9-fc-mmm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="该页面可强制旋转" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2p-Pg-ejX">
+                                <rect key="frame" x="244" y="563" width="112" height="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ef2-QG-RgL">
+                                <rect key="frame" x="548" y="28" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="Akx-8g-pTK"/>
+                                    <constraint firstAttribute="width" constant="32" id="fem-fW-u7Y"/>
+                                </constraints>
+                                <state key="normal" image="close"/>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="kmb-8v-zDx" eventType="touchUpInside" id="Q1j-8G-F6x"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="M2p-Pg-ejX" firstAttribute="centerX" secondItem="3GP-vC-5dp" secondAttribute="centerX" id="FmE-BX-yTl"/>
+                            <constraint firstAttribute="bottom" secondItem="M2p-Pg-ejX" secondAttribute="bottom" constant="20" symbolic="YES" id="K1u-He-nJ0"/>
+                            <constraint firstItem="ef2-QG-RgL" firstAttribute="trailing" secondItem="IX6-Mz-QhR" secondAttribute="trailingMargin" id="Lat-D0-iIw"/>
+                            <constraint firstItem="3GP-vC-5dp" firstAttribute="centerY" secondItem="IX6-Mz-QhR" secondAttribute="centerY" id="gRH-Yh-UzC"/>
+                            <constraint firstItem="ef2-QG-RgL" firstAttribute="top" secondItem="NH1-kP-AYA" secondAttribute="bottom" constant="8" symbolic="YES" id="hqi-fk-JuZ"/>
+                            <constraint firstItem="3GP-vC-5dp" firstAttribute="centerX" secondItem="IX6-Mz-QhR" secondAttribute="centerX" id="log-nZ-M6S"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="ef2-QG-RgL" id="KH4-bs-UNY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mu7-ML-XuA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2442" y="1305"/>
+        </scene>
+        <!--Jinn Navigation Controller-->
+        <scene sceneID="C36-cL-yqX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bZk-gW-QmC" customClass="JinnNavigationController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rmv-rV-1OT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uhR-kA-xRY" kind="relationship" relationship="rootViewController" id="QkR-AW-QTh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mA5-dM-4tz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1019" y="951"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="close" width="16" height="16"/>
+        <image name="icon.png" width="1024" height="1024"/>
+        <image name="orientation" width="48" height="48"/>
+    </resources>
+</document>
