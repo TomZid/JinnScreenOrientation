@@ -57,7 +57,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ksq-mw-eyP" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1723" y="951"/>
+            <point key="canvasLocation" x="1723" y="1005"/>
         </scene>
         <!--Push 页面-->
         <scene sceneID="wd6-6T-zXp">
@@ -82,8 +82,8 @@
                                     <action selector="forceRotation:" destination="g8H-oj-XTx" eventType="touchUpInside" id="bS7-17-GTU"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="该页面可强制旋转" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvf-p2-fjb">
-                                <rect key="frame" x="244" y="563" width="112" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="该页面可手动强制旋转" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvf-p2-fjb">
+                                <rect key="frame" x="230" y="563" width="140" height="17"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -101,7 +101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TXP-tS-4oZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2442" y="553"/>
+            <point key="canvasLocation" x="2442" y="607"/>
         </scene>
         <!--Present View Controller-->
         <scene sceneID="D62-4r-JeT">
@@ -126,8 +126,8 @@
                                     <action selector="forceRotation:" destination="kmb-8v-zDx" eventType="touchUpInside" id="0t9-fc-mmm"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="该页面可强制旋转" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2p-Pg-ejX">
-                                <rect key="frame" x="244" y="563" width="112" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="该页面可手动强制旋转" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2p-Pg-ejX">
+                                <rect key="frame" x="230" y="563" width="140" height="17"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -160,7 +160,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mu7-ML-XuA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2442" y="1305"/>
+            <point key="canvasLocation" x="2442" y="1359"/>
         </scene>
         <!--Jinn Navigation Controller-->
         <scene sceneID="C36-cL-yqX">
@@ -178,7 +178,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mA5-dM-4tz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1019" y="951"/>
+            <point key="canvasLocation" x="1019" y="1005"/>
         </scene>
     </scenes>
     <resources>
