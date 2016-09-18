@@ -55,7 +55,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hHQ-as-08B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3149" y="705"/>
+            <point key="canvasLocation" x="3177" y="813"/>
         </scene>
         <!--Push 页面-->
         <scene sceneID="InP-2k-mZt">
@@ -95,7 +95,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ruh-5G-adS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3908" y="273"/>
+            <point key="canvasLocation" x="3936" y="381"/>
         </scene>
         <!--Present View Controller-->
         <scene sceneID="MmW-LV-5Em">
@@ -127,8 +127,8 @@
                                     <action selector="backButtonAction:" destination="TJR-Bb-dJL" eventType="touchUpInside" id="m4Q-oV-OCG"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="该页面可以任意旋转" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a35-ID-YQo">
-                                <rect key="frame" x="237" y="563" width="126" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="该页面可以任意自动旋转" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a35-ID-YQo">
+                                <rect key="frame" x="223" y="563" width="154" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -147,7 +147,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Et-CB-Eqi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3908" y="1107"/>
+            <point key="canvasLocation" x="3936" y="1215"/>
         </scene>
         <!--Jinn Navigation Controller-->
         <scene sceneID="NO0-iS-4Uo">
@@ -165,7 +165,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sdq-YA-a4Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2407" y="705"/>
+            <point key="canvasLocation" x="2435" y="813"/>
         </scene>
     </scenes>
     <resources>
