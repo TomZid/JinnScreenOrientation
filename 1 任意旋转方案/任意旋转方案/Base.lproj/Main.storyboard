@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Eae-8Z-IlL">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--任意旋转方案-->
+        <scene sceneID="Sxr-yU-F20">
+            <objects>
+                <viewController id="UMb-ja-Nlb" customClass="RootViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fpJ-1x-7bV"/>
+                        <viewControllerLayoutGuide type="bottom" id="ts6-H0-NfN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tYc-fg-wSp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="VZ4-Uf-wTm">
+                                <rect key="frame" x="220" y="220" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="0re-I3-sha"/>
+                                    <constraint firstAttribute="height" constant="160" id="QjP-nm-IcN"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="该页面可任意自动旋转" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjp-G1-ViC">
+                                <rect key="frame" x="230" y="563" width="140" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="cjp-G1-ViC" secondAttribute="bottom" constant="20" symbolic="YES" id="3Kd-Dt-X0e"/>
+                            <constraint firstItem="cjp-G1-ViC" firstAttribute="centerX" secondItem="VZ4-Uf-wTm" secondAttribute="centerX" id="G7s-BN-oBq"/>
+                            <constraint firstItem="VZ4-Uf-wTm" firstAttribute="centerY" secondItem="tYc-fg-wSp" secondAttribute="centerY" id="gog-9M-wOi"/>
+                            <constraint firstItem="VZ4-Uf-wTm" firstAttribute="centerX" secondItem="tYc-fg-wSp" secondAttribute="centerX" id="uju-jN-gpZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="任意旋转方案" id="iHl-ou-Ywx">
+                        <barButtonItem key="leftBarButtonItem" title="Present" id="qmJ-Sp-UfT">
+                            <connections>
+                                <segue destination="Jm6-yf-dpu" kind="presentation" id="CWO-Us-Ool"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Push" id="lML-Lt-new">
+                            <connections>
+                                <segue destination="VK0-rW-cXf" kind="show" id="I9P-5J-SI6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N5T-M3-cVu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2141" y="1061"/>
+        </scene>
+        <!--Push View Controller-->
+        <scene sceneID="8it-Uk-chg">
+            <objects>
+                <viewController id="VK0-rW-cXf" customClass="PushViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FxF-b3-Dan"/>
+                        <viewControllerLayoutGuide type="bottom" id="mOI-AR-DGI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oa9-B8-3x5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qq" translatesAutoresizingMaskIntoConstraints="NO" id="vVF-67-SeK">
+                                <rect key="frame" x="220" y="220" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="a0N-ye-hrd"/>
+                                    <constraint firstAttribute="height" constant="160" id="gaI-Kk-PfZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="该页面可任意自动旋转" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHa-m5-MiN">
+                                <rect key="frame" x="230" y="563" width="140" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="PHa-m5-MiN" secondAttribute="bottom" constant="20" symbolic="YES" id="6JO-j0-u9h"/>
+                            <constraint firstItem="vVF-67-SeK" firstAttribute="centerY" secondItem="oa9-B8-3x5" secondAttribute="centerY" id="Qc0-0h-0bZ"/>
+                            <constraint firstItem="PHa-m5-MiN" firstAttribute="centerX" secondItem="vVF-67-SeK" secondAttribute="centerX" id="Sjv-ka-Oqg"/>
+                            <constraint firstItem="vVF-67-SeK" firstAttribute="centerX" secondItem="oa9-B8-3x5" secondAttribute="centerX" id="fV8-Jr-eBN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tZt-1h-cT6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2958" y="723"/>
+        </scene>
+        <!--Present View Controller-->
+        <scene sceneID="A6M-7P-o8w">
+            <objects>
+                <viewController id="Jm6-yf-dpu" customClass="PresentViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CN1-ZN-CA9"/>
+                        <viewControllerLayoutGuide type="bottom" id="TUI-qv-LaI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bIU-1j-NaE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="webchat" translatesAutoresizingMaskIntoConstraints="NO" id="mcI-K1-6R2">
+                                <rect key="frame" x="220" y="220" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="gIf-aB-utN"/>
+                                    <constraint firstAttribute="height" constant="160" id="pK0-0K-Oti"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="该页面可任意自动旋转" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="luz-rT-p2m">
+                                <rect key="frame" x="230" y="563" width="140" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQ7-PU-Scc">
+                                <rect key="frame" x="548" y="28" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="VYc-UA-gRN"/>
+                                    <constraint firstAttribute="height" constant="32" id="YPc-ut-Uwj"/>
+                                </constraints>
+                                <state key="normal" image="close"/>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="Jm6-yf-dpu" eventType="touchUpInside" id="vYo-MA-sth"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="luz-rT-p2m" secondAttribute="bottom" constant="20" symbolic="YES" id="1Xf-M8-nxl"/>
+                            <constraint firstItem="mcI-K1-6R2" firstAttribute="centerY" secondItem="bIU-1j-NaE" secondAttribute="centerY" id="8Dk-92-bHx"/>
+                            <constraint firstItem="hQ7-PU-Scc" firstAttribute="top" secondItem="CN1-ZN-CA9" secondAttribute="bottom" constant="8" symbolic="YES" id="Z9M-o8-RoO"/>
+                            <constraint firstItem="mcI-K1-6R2" firstAttribute="centerX" secondItem="bIU-1j-NaE" secondAttribute="centerX" id="dHF-kB-XWM"/>
+                            <constraint firstItem="hQ7-PU-Scc" firstAttribute="trailing" secondItem="bIU-1j-NaE" secondAttribute="trailingMargin" id="mfe-4u-Gnd"/>
+                            <constraint firstItem="luz-rT-p2m" firstAttribute="centerX" secondItem="mcI-K1-6R2" secondAttribute="centerX" id="uT5-da-vjX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="znM-DW-gC6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2958" y="1421"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="543-9N-zvH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Eae-8Z-IlL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IgO-aC-7zV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UMb-ja-Nlb" kind="relationship" relationship="rootViewController" id="cn4-dN-lkO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gWq-fq-ZPf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1451" y="1061"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="close" width="16" height="16"/>
+        <image name="icon.png" width="1024" height="1024"/>
+        <image name="qq" width="80" height="80"/>
+        <image name="webchat" width="80" height="80"/>
+    </resources>
+</document>
