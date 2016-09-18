@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NcK-JQ-y73">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Jinn Tab Bar Controller-->
+        <scene sceneID="ggG-V3-shF">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="NcK-JQ-y73" customClass="JinnTabBarController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="4Pv-3F-2hC">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="c2W-ae-Qh9" kind="relationship" relationship="viewControllers" id="UUo-Op-avO"/>
+                        <segue destination="vAM-sA-hD5" kind="relationship" relationship="viewControllers" id="bwa-t7-v5l"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MyX-g8-liy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1315" y="1168"/>
+        </scene>
+        <!--强制旋转-->
+        <scene sceneID="bJg-7L-dd6">
+            <objects>
+                <viewController title="强制旋转" id="hwI-Ag-pED" customClass="SecondViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="76v-sp-iiE"/>
+                        <viewControllerLayoutGuide type="bottom" id="xcc-TX-7U6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cUE-0Z-pcA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qq" translatesAutoresizingMaskIntoConstraints="NO" id="hTF-GD-cjH">
+                                <rect key="frame" x="220" y="220" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="OAZ-XW-Tfe"/>
+                                    <constraint firstAttribute="width" constant="160" id="sGZ-zV-pbT"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="该页面不能旋转" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6H-mt-O6D">
+                                <rect key="frame" x="251" y="526" width="98" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="hTF-GD-cjH" firstAttribute="centerX" secondItem="cUE-0Z-pcA" secondAttribute="centerX" id="5Rh-6p-7B7"/>
+                            <constraint firstItem="hTF-GD-cjH" firstAttribute="centerY" secondItem="cUE-0Z-pcA" secondAttribute="centerY" id="WlG-0o-IyQ"/>
+                            <constraint firstItem="xcc-TX-7U6" firstAttribute="top" secondItem="i6H-mt-O6D" secondAttribute="bottom" constant="8" symbolic="YES" id="rYA-il-LL1"/>
+                            <constraint firstItem="i6H-mt-O6D" firstAttribute="centerX" secondItem="hTF-GD-cjH" secondAttribute="centerX" id="rwS-fw-Fwh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="强制旋转" id="034-Ii-76w">
+                        <barButtonItem key="leftBarButtonItem" title="Present" id="wxl-6N-kjq">
+                            <connections>
+                                <segue destination="3aP-a6-THH" kind="presentation" id="sK3-az-5WW"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Push" id="oYu-Zp-eAP">
+                            <connections>
+                                <segue destination="WIK-or-ttx" kind="show" id="Inx-QH-qzW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ugy-XP-tt9" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2962" y="1694"/>
+        </scene>
+        <!--Push 页面-->
+        <scene sceneID="oON-nv-CiE">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="udT-6j-b02" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController title="Push 页面" hidesBottomBarWhenPushed="YES" id="WIK-or-ttx" customClass="ForceRotationPushViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qhq-2r-Bdz"/>
+                        <viewControllerLayoutGuide type="bottom" id="k7u-bG-otI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="59a-kb-XQx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oex-Ou-ayb">
+                                <rect key="frame" x="276" y="276" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="UjA-5j-5gf"/>
+                                    <constraint firstAttribute="height" constant="48" id="bYR-Nd-lyA"/>
+                                </constraints>
+                                <state key="normal" image="orientation"/>
+                                <connections>
+                                    <action selector="forceRotation:" destination="WIK-or-ttx" eventType="touchUpInside" id="bxU-Be-9y1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="该页面可手动强制旋转" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2B-oi-29X">
+                                <rect key="frame" x="230" y="72" width="140" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="n2B-oi-29X" firstAttribute="centerX" secondItem="Oex-Ou-ayb" secondAttribute="centerX" id="1UK-rF-6q0"/>
+                            <constraint firstItem="Oex-Ou-ayb" firstAttribute="centerY" secondItem="59a-kb-XQx" secondAttribute="centerY" id="kmM-sW-LHM"/>
+                            <constraint firstItem="n2B-oi-29X" firstAttribute="top" secondItem="qhq-2r-Bdz" secondAttribute="bottom" constant="8" symbolic="YES" id="lb7-TL-KWt"/>
+                            <constraint firstItem="Oex-Ou-ayb" firstAttribute="centerX" secondItem="59a-kb-XQx" secondAttribute="centerX" id="mR7-Nb-VNQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Push 页面" id="Ca2-K1-u07"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="3725" y="1366"/>
+        </scene>
+        <!--Present 页面-->
+        <scene sceneID="lfD-wb-nCn">
+            <objects>
+                <viewController title="Present 页面" id="3aP-a6-THH" customClass="ForceRotationPresentViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4pw-9Q-utB"/>
+                        <viewControllerLayoutGuide type="bottom" id="sDG-kK-gxc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rQk-VP-wSH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jud-Vx-Fnx">
+                                <rect key="frame" x="548" y="28" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="hNu-LP-byO"/>
+                                    <constraint firstAttribute="width" constant="32" id="smi-SD-jWm"/>
+                                </constraints>
+                                <state key="normal" image="close"/>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="3aP-a6-THH" eventType="touchUpInside" id="P4Y-j9-aaO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5H-eJ-szD">
+                                <rect key="frame" x="276" y="276" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="EOJ-LI-Sks"/>
+                                    <constraint firstAttribute="height" constant="48" id="okV-ve-rlv"/>
+                                </constraints>
+                                <state key="normal" image="orientation"/>
+                                <connections>
+                                    <action selector="forceRotation:" destination="3aP-a6-THH" eventType="touchUpInside" id="Tiu-yD-Mp5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="该页面可手动强制旋转" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="faf-DB-3dK">
+                                <rect key="frame" x="230" y="563" width="140" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jud-Vx-Fnx" firstAttribute="top" secondItem="4pw-9Q-utB" secondAttribute="bottom" constant="8" symbolic="YES" id="2w4-EL-1wR"/>
+                            <constraint firstItem="J5H-eJ-szD" firstAttribute="centerY" secondItem="rQk-VP-wSH" secondAttribute="centerY" id="E7v-xa-kRH"/>
+                            <constraint firstItem="faf-DB-3dK" firstAttribute="centerX" secondItem="J5H-eJ-szD" secondAttribute="centerX" id="Jcz-xx-P1D"/>
+                            <constraint firstAttribute="bottom" secondItem="faf-DB-3dK" secondAttribute="bottom" constant="20" symbolic="YES" id="XWy-KQ-ux8"/>
+                            <constraint firstItem="Jud-Vx-Fnx" firstAttribute="trailing" secondItem="rQk-VP-wSH" secondAttribute="trailingMargin" id="mfd-ce-hjV"/>
+                            <constraint firstItem="J5H-eJ-szD" firstAttribute="centerX" secondItem="rQk-VP-wSH" secondAttribute="centerX" id="whl-2p-C8l"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="Jud-Vx-Fnx" id="ifL-wg-vfS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9gj-Mg-kCl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3725" y="2058"/>
+        </scene>
+        <!--强制旋转-->
+        <scene sceneID="Ryt-0K-6Ck">
+            <objects>
+                <navigationController title="强制旋转" automaticallyAdjustsScrollViewInsets="NO" id="vAM-sA-hD5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="强制旋转" image="tab" id="idg-2R-Zvk"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZUK-Wo-vvs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hwI-Ag-pED" kind="relationship" relationship="rootViewController" id="ufE-wp-BbW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iv2-Mp-561" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2268" y="1694"/>
+        </scene>
+        <!--自动旋转-->
+        <scene sceneID="V5D-j6-Aaj">
+            <objects>
+                <viewController title="自动旋转" id="2Ng-0X-hfd" customClass="FirstViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Q6v-gL-n8T"/>
+                        <viewControllerLayoutGuide type="bottom" id="cfA-Ir-s0W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZyP-VN-1ju">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="webchat" translatesAutoresizingMaskIntoConstraints="NO" id="pY8-m2-LlA">
+                                <rect key="frame" x="220" y="220" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="EIK-db-TFc"/>
+                                    <constraint firstAttribute="height" constant="160" id="Pbh-My-lab"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="该页面不能旋转" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbH-9y-5Ee">
+                                <rect key="frame" x="251" y="526" width="98" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pY8-m2-LlA" firstAttribute="centerX" secondItem="ZyP-VN-1ju" secondAttribute="centerX" id="3Ff-ia-ra1"/>
+                            <constraint firstItem="cfA-Ir-s0W" firstAttribute="top" secondItem="bbH-9y-5Ee" secondAttribute="bottom" constant="8" symbolic="YES" id="6Yy-iJ-zt5"/>
+                            <constraint firstItem="bbH-9y-5Ee" firstAttribute="centerX" secondItem="pY8-m2-LlA" secondAttribute="centerX" id="vt5-H8-C8v"/>
+                            <constraint firstItem="pY8-m2-LlA" firstAttribute="centerY" secondItem="ZyP-VN-1ju" secondAttribute="centerY" id="w15-a0-LgR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="自动旋转" id="4IZ-5e-Ga1">
+                        <barButtonItem key="leftBarButtonItem" title="Present" id="bwY-dA-Gwh">
+                            <connections>
+                                <segue destination="zfG-Zd-Z8F" kind="presentation" id="UqU-d5-O9z"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UGm-r9-zyD" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2962" y="662"/>
+        </scene>
+        <!--自动旋转-->
+        <scene sceneID="Je7-fQ-n67">
+            <objects>
+                <navigationController title="自动旋转" automaticallyAdjustsScrollViewInsets="NO" id="c2W-ae-Qh9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="自动旋转" image="tab" id="RL0-a7-M0O"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lfT-0j-X0d">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2Ng-0X-hfd" kind="relationship" relationship="rootViewController" id="KzD-uq-u7a"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hHn-Xe-7TG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2268" y="662"/>
+        </scene>
+        <!--Present 页面-->
+        <scene sceneID="uWH-ME-XS9">
+            <objects>
+                <viewController title="Present 页面" id="zfG-Zd-Z8F" customClass="AutoRotationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m5s-fj-mim"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ykp-K3-69N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="h8n-gU-NXr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zVd-iC-8xN">
+                                <rect key="frame" x="548" y="28" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="3A6-sf-RtL"/>
+                                    <constraint firstAttribute="height" constant="32" id="OPs-pS-kKg"/>
+                                </constraints>
+                                <state key="normal" image="close"/>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="zfG-Zd-Z8F" eventType="touchUpInside" id="ZIn-eC-wgd"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="2fH-6s-yPT">
+                                <rect key="frame" x="220" y="220" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="AFE-wy-Obv"/>
+                                    <constraint firstAttribute="width" constant="160" id="ZS2-jZ-dC3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="该页面可任意自动旋转" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCG-Od-upx">
+                                <rect key="frame" x="230" y="563" width="140" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2fH-6s-yPT" firstAttribute="centerY" secondItem="h8n-gU-NXr" secondAttribute="centerY" id="3Hm-Bp-sSs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zVd-iC-8xN" secondAttribute="trailing" id="4k9-54-641"/>
+                            <constraint firstItem="2fH-6s-yPT" firstAttribute="centerX" secondItem="h8n-gU-NXr" secondAttribute="centerX" id="9Tc-Wg-IRt"/>
+                            <constraint firstItem="wCG-Od-upx" firstAttribute="centerX" secondItem="2fH-6s-yPT" secondAttribute="centerX" id="IoX-Kq-0Nk"/>
+                            <constraint firstItem="zVd-iC-8xN" firstAttribute="top" secondItem="m5s-fj-mim" secondAttribute="bottom" constant="8" symbolic="YES" id="ThA-cQ-kzU"/>
+                            <constraint firstAttribute="bottom" secondItem="wCG-Od-upx" secondAttribute="bottom" constant="20" symbolic="YES" id="nzt-wS-2JQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6qb-HX-fff" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3725" y="662"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="close" width="16" height="16"/>
+        <image name="icon.png" width="1024" height="1024"/>
+        <image name="orientation" width="48" height="48"/>
+        <image name="qq" width="80" height="80"/>
+        <image name="tab" width="24" height="24"/>
+        <image name="webchat" width="80" height="80"/>
+    </resources>
+</document>
