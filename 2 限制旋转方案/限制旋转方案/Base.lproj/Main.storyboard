@@ -57,9 +57,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sg8-di-mis" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2311" y="789"/>
+            <point key="canvasLocation" x="2461" y="441"/>
         </scene>
-        <!--Push View Controller-->
+        <!--Push 页面-->
         <scene sceneID="26W-qO-skq">
             <objects>
                 <viewController id="uRz-d2-rl1" customClass="PushViewController" sceneMemberID="viewController">
@@ -93,10 +93,11 @@
                             <constraint firstItem="WMe-xZ-qvt" firstAttribute="centerX" secondItem="lsn-sN-xoZ" secondAttribute="centerX" id="xLO-8i-CRY"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Push 页面" id="mAd-zh-qGf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LOu-D8-6eM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3030" y="391"/>
+            <point key="canvasLocation" x="3180" y="43"/>
         </scene>
         <!--Present View Controller-->
         <scene sceneID="NaX-E8-LNz">
@@ -148,7 +149,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K29-Wz-UrZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3030" y="1143"/>
+            <point key="canvasLocation" x="3180" y="795"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="60j-XH-o8f">
@@ -166,7 +167,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8FN-yw-59s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1607" y="789"/>
+            <point key="canvasLocation" x="1757" y="441"/>
         </scene>
     </scenes>
     <resources>
